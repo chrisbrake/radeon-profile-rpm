@@ -18,5 +18,5 @@
 # Run the daemon first, and then the front end
 
     radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile-daemon &
-    radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile-daemon &
+    radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile &
 
