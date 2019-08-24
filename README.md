@@ -1,5 +1,6 @@
 # Get the software set up
 
+    rm -rf build
     mkdir build
     pushd build
 
@@ -17,6 +18,6 @@
 
 # Run the daemon first, and then the front end
 
-    radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile-daemon &
-    radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile &
+    sudo ./build/radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile-daemon &
+    ./build/radeon-profile/radeon-profile/target/radeon-profile &
 
