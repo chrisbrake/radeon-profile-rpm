@@ -1,0 +1,10 @@
+[Unit]
+Description=radeon profile daemon
+
+[Service]
+ExecStart=/home/cig/PycharmProjects/radeon-profile-rpm/build/radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile-daemon
+User= cig
+Group= cig
+
+[Install]
+WantedBy=multi-user.target

@@ -21,3 +21,16 @@
     sudo ./build/radeon-profile-daemon/radeon-profile-daemon/target/radeon-profile-daemon &
     ./build/radeon-profile/radeon-profile/target/radeon-profile &
 
+# Install, enable, and start the radeon-profile-daemon
+
+    chmod 644 radeon-profile.service
+    sudo cp radeon-profile.service /etc/systemd/system/
+    sudo chown root:root /etc/systemd/system/radeon-profile.service
+    sudo systemctl daemon-reload
+    sudo systemctl enable radeon-profile.service
+    sudo systemctl start radeon-profile.service
+
+## In case of issues
+
+    ls -lh /etc/systemd/system/radeon-profile.service
+    sudo systemd-analyze verify radeon-profile.service
